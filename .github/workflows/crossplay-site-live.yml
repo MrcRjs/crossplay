@@ -28,10 +28,10 @@ on:
   workflow_run:
     workflows: ["CrossPlay emulator"]
     types: [completed]
-  schedule:
+  # schedule:
     # 07:20 UTC. Off the hour, because the hour is when every scheduled job on
     # GitHub queues at once.
-    - cron: "20 7 * * *"
+    # - cron: "20 7 * * *"
   workflow_dispatch:
 
 permissions:
